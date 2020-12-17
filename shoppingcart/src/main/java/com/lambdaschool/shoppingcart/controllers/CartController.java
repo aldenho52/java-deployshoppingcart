@@ -24,7 +24,7 @@ public class CartController
     @Autowired
     private UserRepository userrepos;
 
-    @GetMapping(value = "",
+    @GetMapping(value = "/user",
         produces = {"application/json"})
     public ResponseEntity<?> listCartItemsByUserId()
     {
