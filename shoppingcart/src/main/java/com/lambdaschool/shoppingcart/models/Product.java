@@ -41,6 +41,20 @@ public class Product
 
     }
 
+    public Product(
+        String name,
+        boolean hasprice,
+        double price,
+        String description,
+        String comments)
+    {
+        this.name = name;
+        this.hasprice = hasprice;
+        this.price = price;
+        this.description = description;
+        this.comments = comments;
+    }
+
     public long getProductid()
     {
         return productid;

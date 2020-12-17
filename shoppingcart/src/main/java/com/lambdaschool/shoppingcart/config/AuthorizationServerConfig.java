@@ -15,11 +15,11 @@ import org.springframework.security.oauth2.provider.token.TokenStore;
 public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter
 {
     // client id = username for the application / client
-    static final String CLIENT_ID = "lambda-client";
-    static final String CLIENT_SECRET = "lambda-secret";
+//    static final String CLIENT_ID = "lambda-client";
+//    static final String CLIENT_SECRET = "lambda-secret";
 
-    //    static final String CLIENT_ID = System.getenv("OAUTHCLIENTID");
-    //    static final String CLIENT_SECRET = System.getenv("OAUTHCLIENTSECRET");
+        static final String CLIENT_ID = System.getenv("OAUTHCLIENTID");
+        static final String CLIENT_SECRET = System.getenv("OAUTHCLIENTSECRET");
 
 
     static final String GRANT_TYPE_PASSWORD = "password";
